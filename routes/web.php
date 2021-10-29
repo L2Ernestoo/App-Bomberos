@@ -22,13 +22,13 @@ Route::post('/registrar-bombero', [App\Http\Controllers\BomberosController::clas
 
 
 Route::get('/vehiculos', [App\Http\Controllers\VehiculosController::class, 'index'])->name('vehiculos.index');
-Route::get('/crear-vehiculo', [App\Http\Controllers\VehiculosController::class, 'create'])->name('vehiculos.create');
+Route::get('/crear-vehiculo', [App\Http\Controllers\VehiculosController::class, 'created'])->name('vehiculos.create');
 Route::post('/registrar-vehiculo', [App\Http\Controllers\VehiculosController::class, 'store'])->name('vehiculos.store');
 
 
 
 Route::get('/estaciones', [App\Http\Controllers\EstacionesController::class, 'index'])->name('estaciones.index');
-Route::get('/crear-estacion', [App\Http\Controllers\EstacionesController::class, 'create'])->name('estaciones.create');
+Route::get('/crear-estacion', [App\Http\Controllers\EstacionesController::class, 'created'])->name('estaciones.create');
 Route::post('/registrar-estacion', [App\Http\Controllers\EstacionesController::class, 'store'])->name('estaciones.store');
 
 

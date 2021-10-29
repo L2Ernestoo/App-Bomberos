@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Models\Incidencia;
 use Illuminate\Http\Request;
 
 class IncidentesController extends Controller
@@ -10,4 +11,11 @@ class IncidentesController extends Controller
     {
         $this->middleware('auth');
     }
+
+    public function index(){
+        $incidencias = Incidencia::all();
+        return view('incidencias.index',compact('incidencias'));
+    }
+
+
 }
