@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class BomberosController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function index(){
         $bomberos = Bombero::join('estaciones', 'bomberos.estaciones_id', '=', 'estaciones.id')
             ->join('rangos', 'bomberos.rangos_id', '=', 'rangos.id')
