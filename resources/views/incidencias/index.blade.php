@@ -18,6 +18,7 @@
                     <th scope="col">Direccion</th>
                     <th scope="col">Nombre quien reporta</th>
                     <th scope="col">Fecha</th>
+                    <th scope="col">Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -28,6 +29,7 @@
                         <td>{{$incidencia->direccion}}</td>
                         <td>{{$incidencia->nombre}}</td>
                         <td>{{$incidencia->created_at}}</td>
+                        <td><a href="#Programando" class="btn btn-primary">Atender Emergencia</a></td>
                     </tr>
                 @endforeach
                 </tbody>
