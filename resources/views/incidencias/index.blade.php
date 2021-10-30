@@ -17,6 +17,7 @@
                     <th scope="col">Descripcion</th>
                     <th scope="col">Direccion</th>
                     <th scope="col">Nombre quien reporta</th>
+                    <th scope="col">Fecha</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -26,6 +27,7 @@
                         <td>{{$incidencia->descripcion}}</td>
                         <td>{{$incidencia->direccion}}</td>
                         <td>{{$incidencia->nombre}}</td>
+                        <td>{{$incidencia->created_at}}</td>
                     </tr>
                 @endforeach
                 </tbody>
