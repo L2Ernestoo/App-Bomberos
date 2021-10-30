@@ -20,6 +20,10 @@ Route::get('/bomberos', [App\Http\Controllers\BomberosController::class, 'index'
 Route::get('/crear-bombero', [App\Http\Controllers\BomberosController::class, 'create'])->name('bomberos.create');
 Route::post('/registrar-bombero', [App\Http\Controllers\BomberosController::class, 'store'])->name('bomberos.store');
 
+Route::get('/incidentes', [App\Http\Controllers\IncidentesController::class, 'index'])->name('incidentes.index');
+Route::get('/crear-incidente', [App\Http\Controllers\Api\IncidenteController::class, 'created'])->name('incidente.create');
+Route::post('/store-incidente', [App\Http\Controllers\Api\IncidenteController::class, 'store'])->name('incidente.store');
+
 
 Route::get('/vehiculos', [App\Http\Controllers\VehiculosController::class, 'index'])->name('vehiculos.index');
 Route::get('/crear-vehiculo', [App\Http\Controllers\VehiculosController::class, 'created'])->name('vehiculos.create');

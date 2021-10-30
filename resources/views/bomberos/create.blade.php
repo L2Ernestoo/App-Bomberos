@@ -15,7 +15,7 @@
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Direccion</label>
-                <input type="text" required name="direccion" maxlength="45" class="form-control" id="inputAddress" placeholder="Por donde ramiro">
+                <input type="text" required name="direccion" maxlength="45" class="form-control" id="inputAddress" placeholder="Por donde">
             </div>
             <div class="col-md-6">
                 <label for="inputAddress2" class="form-label">Telefono</label>

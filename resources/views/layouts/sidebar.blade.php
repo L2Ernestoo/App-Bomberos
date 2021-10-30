@@ -9,6 +9,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('incidentes.index')}}"><i class="bi bi-exclamation-octagon-fill"></i> Incidentes se quema algo</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('bomberos.index')}}"><i class="bi bi-person-lines-fill"></i> Bomberos</a>
                 </li>
                 <li class="nav-item">
