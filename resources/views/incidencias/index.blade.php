@@ -4,7 +4,7 @@
     <div class="container shadow-sm">
         <div class="row">
             <div class="col-md-10">
-                <h1 class="mt-4">Estaciones</h1>
+                <h1 class="mt-4">Emergencias</h1>
             </div>
             <div class="col-md-2 justify-content-end">
             </div>
